@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "blinkit",
+    "slug": "blinkit-expo",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/images/splash_logo.jpeg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.blinkit.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.blinkit.app"
+    },
+    "web": {
+      "favicon": "./src/assets/images/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to provide better shopping experience."
+        }
+      ]
+    ],
+    "scheme": "blinkit"
+  }
+}
